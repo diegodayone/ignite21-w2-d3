@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ignite W2-D3</title>
+</head>
+
+<body>
+    <h1>Ignite W2-D3</h1>
+
+    <input type="text" id="myText" placeholder="text of the new task" />
+    <button onclick="addTask()" >✅</button>
+    <ul id="myList">
+
+    </ul>
+
+    <script>
+        console.log("the script tag is working")
+
+        let previousTasks = [ "HW", "Recording", "Wrapup"]
+
+        for(let i = 0; i < previousTasks.length; i++){
+            let myList = document.querySelector("#myList")
+            myList.innerHTML += "<li>" + previousTasks[i] + "</li>"
+        }
+    </script>
+
+    <script src="myscript.js"></script>
+</body>
+
+</html>
